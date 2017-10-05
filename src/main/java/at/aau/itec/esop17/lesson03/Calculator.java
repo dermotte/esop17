@@ -10,14 +10,10 @@ public class Calculator {
         // Von System In lesen via Scanner:
         Scanner myScanner = new Scanner(System.in);
 
-        int myReadNumber = 0;
-        int howMany = 0;
+        int myReadNumber = 42;
         int summe = 0;
 
-        System.out.print("How many number to you want to add up? ");
-        howMany = myScanner.nextInt();
-
-        while (howMany-- > 0) {
+        while (myReadNumber != 0) {
             // read the number
             System.out.print("Type in a number: ");
             myReadNumber = myScanner.nextInt();
