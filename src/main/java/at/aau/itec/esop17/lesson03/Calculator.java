@@ -8,15 +8,23 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         // Von System In lesen via Scanner:
-        Scanner s = new Scanner(System.in);
+        Scanner myScanner = new Scanner(System.in);
 
         int myReadNumber = 0;
+        int howMany = 0;
+        int summe = 0;
 
-        while (myReadNumber>=0) {
+        System.out.print("How many number to you want to add up? ");
+        howMany = myScanner.nextInt();
+
+        while (howMany-- > 0) {
             // read the number
-            myReadNumber = s.nextInt();
+            System.out.print("Type in a number: ");
+            myReadNumber = myScanner.nextInt();
             System.out.println("I've understood you typed in " + myReadNumber);
+            summe = summe + myReadNumber;
         }
+        System.out.println("summe = " + summe);
 
     }
 }

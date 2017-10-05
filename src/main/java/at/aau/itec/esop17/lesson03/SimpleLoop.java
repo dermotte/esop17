@@ -5,9 +5,12 @@ package at.aau.itec.esop17.lesson03;
  */
 public class SimpleLoop {
     public static void main(String[] args) {
-        int x = 0;
-        while (x++ < 10) {
+
+        byte x = 0;
+        byte one = 1;
+        while (true) {
             System.out.println(x);
+            x = (byte) (one + x);
         }
     }
 }

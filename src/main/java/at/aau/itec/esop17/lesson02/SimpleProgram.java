@@ -5,8 +5,11 @@ package at.aau.itec.esop17.lesson02;
  */
 public class SimpleProgram {
     public static void main(String[] args) {
-        int x = 1;
-        x++;
-        System.out.println(x);
+        int x = 42;
+        byte b = 127;
+
+        b++;
+        System.out.println(b);
     }
+
 }
