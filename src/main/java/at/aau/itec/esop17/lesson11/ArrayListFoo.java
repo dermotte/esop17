@@ -4,10 +4,17 @@ import java.util.*;
 
 public class ArrayListFoo {
     public static void main(String[] args) {
-        // java.util.List al = new ArrayList(4);
-        java.util.List al = new LinkedList();
-        for (int i = 0; i < 5; i++) {
-            al.add(i);
+        // New ArrayList with an initial size of 12 elements:
+        ArrayList arrayList = new ArrayList(12);
+        // Now add some random int values to the list:
+        for (int i = 0; i < 40; i++) {
+            arrayList.add((int) (Math.random()*100000));
+        }
+        // Use an iterator to visit every element:
+        Iterator iterator = arrayList.iterator();
+        while (iterator.hasNext()) {
+            Object next = iterator.next();
+            System.out.println(next);
         }
     }
 }
